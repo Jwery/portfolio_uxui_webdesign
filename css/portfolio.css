@@ -21,7 +21,7 @@
 }
 
 .item {
-  justify-self: left;
+  justify-self: right;
   width: 80vw;
   margin: 1rem;
   border: solid white 5px;
@@ -50,4 +50,9 @@
 .item a {
   font-size: 1rem;
   text-decoration: underline;
+}
+
+.content {
+  text-align: center;
+  margin-left: 2rem;
 }/*# sourceMappingURL=portfolio.css.map */
