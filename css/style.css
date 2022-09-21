@@ -1,0 +1,330 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+[type=checkbox] {
+  width: 4rem;
+  height: 4rem;
+  appearance: none;
+  position: absolute;
+  z-index: 1;
+  right: 3em;
+  top: 3em;
+  box-sizing: border-box;
+  background: url(https://svgshare.com/i/maG.svg);
+  background-position: center;
+  background-size: 100%;
+}
+@media (min-width: 48rem) {
+  [type=checkbox] {
+    display: none;
+  }
+}
+
+[type=checkbox]:checked ~ nav {
+  right: 0;
+}
+
+#navbar nav {
+  height: 10vh;
+}
+
+nav {
+  position: fixed;
+  min-height: 100vh;
+  transition: all 0.3s;
+  display: grid;
+  width: 100%;
+  justify-content: end;
+  align-content: start;
+  right: -100vh;
+  top: 0rem;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 5rem;
+}
+nav :hover {
+  color: yellow;
+}
+@media (min-width: 48rem) {
+  nav {
+    min-height: 0vh;
+    position: fixed;
+    display: flex;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    justify-items: center;
+    transition: 0.5s;
+    max-height: max-content;
+    height: 10vh;
+  }
+  nav a {
+    margin: 0;
+    text-align: center;
+    height: 10vh;
+  }
+}
+
+.ico {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin-right: 2rem;
+  justify-items: center;
+}
+@media (min-width: 48rem) {
+  .ico {
+    display: none;
+  }
+}
+
+.icon {
+  padding: 0 auto;
+  height: 5rem;
+  width: 5rem;
+}
+
+.icon img {
+  height: 5rem;
+  width: 5rem;
+  text-align: right;
+}
+@media (min-width: 48rem) {
+  .icon img {
+    display: none;
+  }
+}
+
+.coordonnees {
+  display: grid;
+  text-align: right;
+}
+@media (min-width: 48rem) {
+  .coordonnees {
+    display: none;
+  }
+}
+
+.coordonnees a {
+  height: 10px;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  text-align: right;
+  color: white;
+  padding: 2rem;
+  font-family: "Silkscreen";
+  font-size: 1.5rem;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+  a {
+    font-size: 1rem;
+    font-family: "Silkscreen";
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+}
+
+.home {
+  display: grid;
+  justify-items: center;
+  margin-top: 7rem;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: auto;
+  display: grid;
+  color: white;
+  font-family: "Silkscreen";
+}
+
+h2 {
+  font-family: "Silkscreen";
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.imgbox img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: solid 5px #FFF;
+  box-sizing: border-box;
+  justify-content: border;
+  justify-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+button {
+  padding: 1rem;
+  font-family: "Silkscreen";
+  font-size: 1.5rem;
+  color: white;
+  background: none;
+  border: 3px white solid;
+}
+button :hover {
+  color: black;
+  background: white;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 5x solid white;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: black;
+  width: 500px;
+  max-width: 80%;
+  border: 3px white solid;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid white;
+}
+
+.modal-header .title {
+  font-family: "Silkscreen";
+  color: white;
+  font-size: 3rem;
+  padding: 0;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-family: "Silkscreen";
+  font-size: 2rem;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  border: solid 3px #FFF;
+  border-radius: 10px;
+  color: white;
+  font-family: "roboto";
+  text-align: center;
+  font-size: 1rem;
+  padding: 1.5rem;
+  bottom: -10;
+  left: 0px;
+  right: 0px;
+  margin-top: 6rem;
+  background: black;
+}
+
+.cv a {
+  padding: 2rem;
+  margin: 1rem;
+  font-family: "Silkscreen";
+  font-size: 1rem;
+  color: white;
+  background: none;
+  border: 3px white solid;
+}
+.cv a :hover {
+  color: black;
+  background: white;
+}
+
+.contact {
+  display: grid;
+  justify-items: center;
+  height: 50vh;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.contact a {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  justify-items: center;
+  text-align: center;
+}
+@media (min-height: 48rem) {
+  .contact a {
+    font-size: 1rem;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+.reseau {
+  display: flex;
+  justify-content: center;
+}
+
+.rs {
+  padding: 0 auto;
+  height: 5rem;
+  width: 5rem;
+}
+
+.rs img {
+  height: 5rem;
+  width: 5rem;
+  text-align: right;
+}
+
+.reseau {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}/*# sourceMappingURL=style.css.map */

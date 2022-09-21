@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.homep {
+  width: 80vw;
+  justify-items: center;
+}
+@media (min-width: 40rem) {
+  .homep {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+}
+
+.titre {
+  justify-self: start;
+  margin: 4rem;
+}
+
+.item {
+  justify-self: left;
+  width: 80vw;
+  margin: 1rem;
+  border: solid white 5px;
+  text-align: center;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .item {
+    max-width: 400px;
+  }
+}
+
+.item img {
+  width: 50vw;
+}
+@media (min-width: 40rem) {
+  .item img {
+    max-width: 300px;
+  }
+}
+
+.item h2 {
+  font-size: 1.5rem;
+}
+
+.item a {
+  font-size: 1rem;
+  text-decoration: underline;
+}/*# sourceMappingURL=portfolio.css.map */
