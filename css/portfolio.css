@@ -1,3 +1,4 @@
+@import url("http://fonts.cdnfonts.com/css/8bit-wonder");
 * {
   box-sizing: border-box;
 }
@@ -22,7 +23,7 @@
 
 .item {
   justify-self: right;
-  width: 80vw;
+  width: 90vw;
   margin: 1rem;
   border: solid white 5px;
   text-align: center;
@@ -35,7 +36,7 @@
 }
 
 .item img {
-  width: 50vw;
+  width: 80vw;
 }
 @media (min-width: 40rem) {
   .item img {
@@ -53,6 +54,5 @@
 }
 
 .content {
-  text-align: center;
-  margin-left: 2rem;
+  align-items: center;
 }/*# sourceMappingURL=portfolio.css.map */

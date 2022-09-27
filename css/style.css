@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Silkscreen:wght@400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/video");
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
 body {
   background: black;
+}
+
+[type=checkbox] ~ img {
+  width: 5rem;
+  height: 5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-content: end;
+  margin-left: 23rem;
+}
+@media (min-width: 40rem) {
+  [type=checkbox] ~ img {
+    display: none;
+  }
 }
 
 [type=checkbox] {
@@ -15,7 +32,7 @@ body {
   right: 3em;
   top: 3em;
   box-sizing: border-box;
-  background: url(https://svgshare.com/i/maG.svg);
+  background: "vecto/hamburger.svg";
   background-position: center;
   background-size: 100%;
 }
@@ -121,14 +138,14 @@ a {
   text-align: right;
   color: white;
   padding: 2rem;
-  font-family: "Silkscreen";
+  font-family: "Video", sans-serif;
   font-size: 1.5rem;
   width: 100%;
 }
 @media (min-width: 48rem) {
   a {
     font-size: 1rem;
-    font-family: "Silkscreen";
+    font-family: "Video", sans-serif;
     padding: 1rem;
     margin-top: 3rem;
   }
@@ -145,11 +162,18 @@ h1 {
   margin-top: auto;
   display: grid;
   color: white;
-  font-family: "Silkscreen";
+  font-family: "Video", sans-serif;
+  font-size: 3rem;
+}
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
 }
 
 h2 {
-  font-family: "Silkscreen";
+  font-family: "Video", sans-serif;
   color: white;
 }
 
@@ -172,7 +196,7 @@ p {
 
 button {
   padding: 1rem;
-  font-family: "Silkscreen";
+  font-family: "Video", sans-serif;
   font-size: 1.5rem;
   color: white;
   background: none;
@@ -211,7 +235,7 @@ button :hover {
 }
 
 .modal-header .title {
-  font-family: "Silkscreen";
+  font-family: "Video", sans-serif;
   color: white;
   font-size: 3rem;
   padding: 0;
@@ -223,7 +247,7 @@ button :hover {
   outline: none;
   background: none;
   color: white;
-  font-family: "Silkscreen";
+  font-family: "8BIT WONDER", sans-serif;
   font-size: 2rem;
 }
 

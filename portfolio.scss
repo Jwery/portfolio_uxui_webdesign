@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Silkscreen:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/8bit-wonder');
 .homep{
   width: 80vw;
   justify-items: center;
@@ -18,7 +18,7 @@
 }
 .item{
   justify-self: right;
-  width: 80vw;
+  width: 90vw;
   margin: 1rem;
   border: solid white 5px;
   text-align: center;
@@ -30,7 +30,7 @@
   }
 }
 .item img{
-  width: 50vw;
+  width: 80vw;
   @media(min-width: 40rem){
     max-width: 300px;
 
@@ -44,6 +44,5 @@
   text-decoration: underline;
 }
 .content{
-  text-align: center;
-  margin-left: 2rem;
+ align-items:center;
 }

@@ -2,14 +2,24 @@
   box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Silkscreen:wght@400;700&display=swap');
-@import ur('https//fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
-@font-face {
-  font-family:silkscreen;
-  src: url("font/Silkscreen-Bold.ttf");
-}
+@import url('http://fonts.cdnfonts.com/css/video');
 body{
   background: black;
 }
+
+[type="checkbox"] ~ img{
+  width: 5rem;
+  height: 5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-content: end;
+  margin-left: 23rem;
+  @media (min-width: 40rem){
+    display: none;
+}  
+  
+} 
 [type="checkbox"] {
   width: 4rem;
   height: 4rem;
@@ -19,7 +29,7 @@ body{
   right: 3em;
   top: 3em; 
   box-sizing: border-box;
-  background:URL(https://svgshare.com/i/maG.svg);
+  background:("vecto/hamburger.svg");
   background-position: center;
   background-size: 100%;
   @media (min-width: 48rem){
@@ -107,12 +117,12 @@ nav{
     text-align: right;
     color: white;
     padding: 2rem;
-    font-family: 'Silkscreen';
+    font-family: 'Video', sans-serif;
     font-size: 1.5rem;
     width: 100%;
      @media(min-width: 48rem) {
        font-size: 1rem;
-       font-family: 'Silkscreen';
+       font-family: 'Video', sans-serif;
        padding: 1rem;
        margin-top: 3rem;
   }
@@ -125,16 +135,19 @@ height: 100vh;
 }
 
 
-
-
 h1{
   margin-top: auto;
   display: grid;
   color:white;
-  font-family: 'Silkscreen';
+  font-family: 'Video', sans-serif;
+  font-size: 3rem;
+  @media(min-width:48rem) {
+    font-size: 4rem;
+    text-align: center;
+  }
   }
 h2{
-  font-family: 'Silkscreen';
+  font-family: 'Video', sans-serif;
   color: white;
   }
 p{
@@ -157,7 +170,7 @@ margin-bottom: 5rem;
 
 button{
    padding: 1rem;
-  font-family: 'Silkscreen';
+   font-family: 'Video', sans-serif;
   font-size: 1.5rem;
  color: white;
   background: none;
@@ -194,7 +207,7 @@ button{
   border-bottom: 5px solid white;
 }
 .modal-header .title{
-  font-family: 'Silkscreen';
+  font-family: 'Video', sans-serif;
   color: white;
   font-size: 3rem;
   padding: 0;
@@ -206,7 +219,7 @@ button{
   outline:  none;
   background: none;
   color: white;
-  font-family: 'Silkscreen';
+  font-family: '8BIT WONDER', sans-serif;
   font-size: 2rem;
 }
 .modal-body{
