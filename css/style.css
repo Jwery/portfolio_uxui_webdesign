@@ -23,6 +23,10 @@ body {
   }
 }
 
+.icon-hamburger {
+  background-image: url(../Retard.svg);
+}
+
 [type=checkbox] {
   width: 4rem;
   height: 4rem;
@@ -32,11 +36,11 @@ body {
   right: 3em;
   top: 3em;
   box-sizing: border-box;
-  background: "vecto/hamburger.svg";
   background-position: center;
   background-size: 100%;
+  position: absolute;
 }
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
   [type=checkbox] {
     display: none;
   }
@@ -46,8 +50,10 @@ body {
   right: 0;
 }
 
-#navbar nav {
-  height: 10vh;
+@media (min-width: 48rem) {
+  #navbar nav {
+    height: 5vh;
+  }
 }
 
 nav {
@@ -59,7 +65,8 @@ nav {
   justify-content: end;
   align-content: start;
   right: -100vh;
-  top: 0rem;
+  top: 3rem;
+  gap: 2rem;
   transition: all 1s;
   background-color: rgba(0, 0, 0, 0.9);
   padding-top: 5rem;
@@ -91,6 +98,7 @@ nav {
   grid-gap: 5px;
   margin-right: 2rem;
   justify-items: center;
+  margin-top: 3rem;
 }
 @media (min-width: 48rem) {
   .ico {
