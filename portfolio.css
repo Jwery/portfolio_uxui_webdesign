@@ -1,38 +1,44 @@
-*{
+@import url("http://fonts.cdnfonts.com/css/8bit-wonder");
+* {
   box-sizing: border-box;
 }
-@import url('http://fonts.cdnfonts.com/css/8bit-wonder');
 
 .titre {
   justify-self: start;
   margin: 4rem;
 }
-.item{
+
+.item {
   width: 90vw;
   margin: 1rem;
   border: solid white 5px;
   text-align: center;
   padding: 1rem;
-
-  @media(min-width: 40rem){
+}
+@media (min-width: 40rem) {
+  .item {
     max-width: 400px;
-
   }
 }
-.item img{
+
+.item img {
   width: 80vw;
-  @media(min-width: 40rem){
+}
+@media (min-width: 40rem) {
+  .item img {
     max-width: 400px;
-
   }
 }
-.item h2{
+
+.item h2 {
   font-size: 1.5rem;
 }
-.item a{
+
+.item a {
   font-size: 1rem;
   text-decoration: underline;
 }
-.content{
- justify-content:space-evenly;
-}
+
+.content {
+  justify-content: space-evenly;
+}/*# sourceMappingURL=portfolio.css.map */

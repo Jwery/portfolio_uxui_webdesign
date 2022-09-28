@@ -20,6 +20,17 @@ body{
 }  
   
 } 
+.homep {
+  width: 80vw;
+  justify-items: center;
+  @media(min-width: 40rem){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+    background: red;
+  }
+}
 [type="checkbox"] {
   width: 4rem;
   height: 4rem;
@@ -127,7 +138,7 @@ nav{
        margin-top: 3rem;
   }
 }
-.home{
+.home {
  display: grid;
 justify-items: center;
 margin-top: 7rem;
