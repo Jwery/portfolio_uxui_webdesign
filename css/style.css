@@ -23,10 +23,6 @@ body {
   }
 }
 
-.icon-hamburger {
-  background-image: url(../Retard.svg);
-}
-
 [type=checkbox] {
   width: 4rem;
   height: 4rem;
@@ -36,11 +32,12 @@ body {
   right: 3em;
   top: 3em;
   box-sizing: border-box;
+  background-image: url(../Retard.png);
   background-position: center;
   background-size: 100%;
   position: absolute;
 }
-@media (min-width: 60rem) {
+@media (min-width: 48rem) {
   [type=checkbox] {
     display: none;
   }
@@ -48,12 +45,6 @@ body {
 
 [type=checkbox]:checked ~ nav {
   right: 0;
-}
-
-@media (min-width: 48rem) {
-  #navbar nav {
-    height: 5vh;
-  }
 }
 
 nav {
@@ -65,16 +56,16 @@ nav {
   justify-content: end;
   align-content: start;
   right: -100vh;
-  top: 3rem;
-  gap: 2rem;
+  top: 1rem;
   transition: all 1s;
   background-color: rgba(0, 0, 0, 0.9);
-  padding-top: 5rem;
+  padding-top: 7rem;
+  gap: 3em;
 }
-@media (min-width: 48rem) {
+@media (min-width: 40rem) {
   nav {
     min-height: 0vh;
-    position: fixed;
+    position: absolute;
     display: flex;
     left: 0;
     width: 100%;
@@ -82,7 +73,6 @@ nav {
     color: white;
     justify-items: center;
     transition: 0.5s;
-    max-height: max-content;
     height: 10vh;
   }
   nav a {
@@ -291,7 +281,7 @@ button :hover {
 
 footer {
   width: 100%;
-  height: 10rem;
+  height: 5rem;
   border: solid 3px #FFF;
   color: white;
   font-family: "roboto";
@@ -318,7 +308,10 @@ footer {
 .contact {
   display: grid;
   justify-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   height: 50vh;
+  gap: 2rem;
 }
 
 h3 {
@@ -327,7 +320,6 @@ h3 {
 }
 
 .contact a {
-  margin: 0;
   padding: 0;
   font-size: 1rem;
   justify-items: center;
@@ -341,21 +333,21 @@ h3 {
   }
 }
 
-.reseau {
-  display: flex;
-  justify-content: center;
-}
-
 .rs {
-  padding: 0 auto;
   height: 5rem;
   width: 5rem;
+  text-align: center;
+}
+
+.reseau > a {
+  justify-content: start;
+  margin: 0;
 }
 
 .rs img {
   height: 5rem;
   width: 5rem;
-  text-align: right;
+  margin-left: -1rem;
 }
 
 .reseau {
