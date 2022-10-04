@@ -1,0 +1,53 @@
+.center {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.center .text-center {
+  text-align: center;
+  width: 100%;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  51% {
+    border-right-color: #fff;
+  }
+  100% {
+    border-right-color: #fff;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  51% {
+    border-right-color: #fff;
+  }
+  100% {
+    border-right-color: #fff;
+  }
+}
+canvas {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home {
+  margin-top: -70vh;
+}/*# sourceMappingURL=snow.css.map */
