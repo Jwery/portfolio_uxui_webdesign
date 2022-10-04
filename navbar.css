@@ -1,8 +1,10 @@
 body > * {
-  border: 3px solid white;
   margin: 10px 0;
 }
 
+nav {
+  justify-content: center;
+}
 main, section {
   height: 100vh;
 }
@@ -36,9 +38,17 @@ header nav ul {
   justify-content: center;
 }
 
+@media (min-width: 40rem) {
+  header nav a {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+}
+
 ul {
   text-align: right;
 }
+
 li {
   margin-top: 50px;
 }
