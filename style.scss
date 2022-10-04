@@ -55,6 +55,7 @@ nav{
   background-color: rgba(0,0,0, 0.9);
   padding-top:7rem;
   gap:3em;
+  z-index: 0;
   @media (min-width: 40rem) { 
       min-height: 0vh;
       position: absolute;
