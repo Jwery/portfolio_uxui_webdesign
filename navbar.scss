@@ -3,15 +3,14 @@ body > *{
 }
 nav{
     justify-content: center;
-    @media(min-width: 40rem){
-
-    }
 }
 main, section{
     height: 100vh;
 }
 header button{
     position: relative;
+    border:none;
+    background: none;
 }
 header nav{
     position: fixed;
@@ -22,7 +21,16 @@ header nav{
     padding: 1rem;
     background-color: black;
     transition: left 1s;
+    @media(min-width: 40rem){
+        justify-content: space-around;
+    }
 }
+#ret{
+    height:5rem;
+    background: none;
+}
+    
+
 header nav.open{
     left: 0;
     transition: left 1s;
@@ -37,21 +45,19 @@ header nav ul{
 }
 
 header nav a {
-    @media(min-width: 40rem){
-        font-size: 1.5rem;
-        gap: 1rem;
-    }
+    text-align: center;
 }
 
 ul{
     text-align: right;
+    margin-top:11rem;
+    @media(min-width: 40rem){
+        justify-content: space-around;
+    }
 }
 
 li{
     margin-top: 50px;
-    @media(min-width: 40rem){
-        margin-top: 0px;
-    }
 }
 footer button{
     position:fixed;
@@ -77,4 +83,31 @@ footer button{
     header button{
         display: none!important;
     }
-}
+    ul{
+        margin-top: 0px;
+    }
+    header nav a {
+        font-size: 1.5rem;
+        margin-left:2rem;
+        margin-right: 2rem;
+    }
+nav ul li a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+ nav ul li a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+    }
+    main, section{
+        height:auto;
+      }

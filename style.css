@@ -41,7 +41,7 @@ body {
 
 .coordonnees {
   display: grid;
-  text-align: right;
+  text-align: center;
   text-decoration: underline;
 }
 @media (min-width: 48rem) {
@@ -217,10 +217,8 @@ button :hover {
 .contact {
   display: grid;
   justify-items: center;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  height: 50vh;
   gap: 2rem;
+  margin: 0;
 }
 
 h3 {
@@ -264,4 +262,20 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   justify-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  border: solid 3px #FFF;
+  color: white;
+  font-family: "roboto";
+  text-align: center;
+  font-size: 1rem;
+  padding: 1.5rem;
+  bottom: 0rem;
+  left: 0px;
+  right: 0px;
+  background: black;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
