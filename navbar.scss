@@ -21,6 +21,7 @@ header nav{
     padding: 1rem;
     background-color: black;
     transition: left 1s;
+    z-index:0;
     @media(min-width: 40rem){
         justify-content: space-around;
     }

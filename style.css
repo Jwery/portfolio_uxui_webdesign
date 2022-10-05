@@ -218,6 +218,8 @@ button :hover {
   display: grid;
   justify-items: center;
   gap: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   margin: 0;
 }
 
