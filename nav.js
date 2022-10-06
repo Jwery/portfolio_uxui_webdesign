@@ -21,11 +21,7 @@ document.querySelector('footer button').addEventListener('click', function() {
         }
     );
 });
-// Mouse coordinates
-window.addEventListener('mousemove', function(event) {
-    //console.log(event.clientX, event.clientY);
-    document.querySelector('#mouseCoordinates').innerHTML = event.clientX + ' ' + event.clientY;
-});
+
 // keyboard keydown
 window.addEventListener('keydown', function(event) {
     //console.log(event.key);
