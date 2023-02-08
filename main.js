@@ -288,3 +288,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 initPhotoSwipeFromDOM('.photoswipe-wrapper');
 
+// animation du titire du portfolio
+

@@ -8,7 +8,7 @@
     <script defer src="https://i.icomoon.io/public/temp/5c51f43433/UntitledProject/svgxuse.js"></script>
     
     <!--<link rel="stylesheet" href="css/snow.css">-->
-<title>Joachim Wéry</title>
+<title></title>
 </head>
   <body>
       <!--<canvas id="snow"></canvas>-->
@@ -59,8 +59,8 @@
 
 
     <div class="home">
-            <h1>JOACHIM WERY</h1>
-            <h2>WEBDESIGN UI/UX</h2>
+            <h1 id="text1"></h1>
+            <h2 id="text2"></h2>
         <div class="imgbox">
             <img src="img/profil.jpg"/>
         </div>
@@ -82,6 +82,34 @@
 
     <script src="main.js"></script>
     <script src="nav.js"></script>
+
+    <script>
+        let i = 0;
+        let j = 0;
+        let text1 = "JOACHIM WERY";
+        let text2 = "WEBDESIGN UI/UX";
+        let speed = 50; 
+      
+        function typeWriter() {
+          if (i <= text1.length) {
+            document.querySelector("#text1").innerHTML += text1.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          } else {
+            setTimeout(typeWriter2, 3000);
+          }
+        }
+        function typeWriter2() {
+          if (j < text2.length) {
+            document.querySelector("#text2").innerHTML += text2.charAt(j);
+            j++;
+            setTimeout(typeWriter2, speed);
+          } 
+        }
+      
+        typeWriter();
+        typeWriter2();
+      </script>
     <!--<script src="snow.js"></script>-->
 </body>
 </html>
