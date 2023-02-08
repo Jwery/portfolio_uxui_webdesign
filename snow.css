@@ -13,21 +13,6 @@
   width: 100%;
 }
 
-@-webkit-keyframes blink {
-  0% {
-    border-right-color: transparent;
-  }
-  50% {
-    border-right-color: transparent;
-  }
-  51% {
-    border-right-color: #fff;
-  }
-  100% {
-    border-right-color: #fff;
-  }
-}
-
 @keyframes blink {
   0% {
     border-right-color: transparent;

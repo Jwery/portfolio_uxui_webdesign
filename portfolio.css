@@ -1,60 +1,85 @@
-@import url("http://fonts.cdnfonts.com/css/8bit-wonder");
-* {
-  box-sizing: border-box;
+body, html {
+  margin: 0;
 }
 
-.homep {
-  width: 80vw;
-  justify-items: center;
-}
-@media (min-width: 40rem) {
-  .homep {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin: 0;
-    justify-items: center;
-  }
+.container-all {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  height: auto;
 }
 
-.titre {
-  justify-self: start;
-  margin: 4rem;
+.container {
+  width: calc(33% - 6px);
+  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3px;
+  padding: 0;
+  display: block;
+  position: relative;
+  float: right;
 }
 
-.item {
-  justify-self: right;
-  width: 90vw;
-  margin: 1rem;
-  border: solid white 5px;
+img {
+  width: 100%;
+  transition-duration: 0.3s;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 35%;
+  display: none;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.6em;
+  text-shadow: 1px 5px 10px black;
+  transition-duration: 0.3s;
+}
+
+.text {
+  position: absolute;
+  top: 70%;
+  cursor: pointer;
+  max-width: 80%;
   text-align: center;
-  padding: 1rem;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  font-size: 1em;
+  display: none;
+  margin-right: -50%;
+  transition-duration: 0.3s;
+  transform: translate(-50%, -50%);
 }
-@media (min-width: 40rem) {
-  .item {
-    max-width: 400px;
+
+.container:hover img {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  filter: grayscale(50%);
+  opacity: 0.7;
+}
+
+.container:hover span {
+  color: white;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: calc(50% - 6px);
   }
 }
-
-.item img {
-  width: 80vw;
-}
-@media (min-width: 40rem) {
-  .item img {
-    max-width: 300px;
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
   }
-}
-
-.item h2 {
-  font-size: 1.5rem;
-}
-
-.item a {
-  font-size: 1rem;
-  text-decoration: underline;
-}
-
-.content {
-  align-items: center;
-  margin-top: 10rem;
 }/*# sourceMappingURL=portfolio.css.map */
