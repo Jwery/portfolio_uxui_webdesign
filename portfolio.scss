@@ -9,6 +9,7 @@ h2{
   margin: 20px auto;
   height: auto;
   display:flex;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 .container{
@@ -21,6 +22,7 @@ h2{
   flex-wrap: wrap;
   position:relative;
   float:left;
+  border:solid white .5rem;
 }
 @media only screen and (max-width: 767px) {
   .containe-all {

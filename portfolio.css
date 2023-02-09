@@ -8,6 +8,7 @@ h2 {
   margin: 20px auto;
   height: auto;
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -22,6 +23,7 @@ h2 {
   flex-wrap: wrap;
   position: relative;
   float: left;
+  border: solid white 0.5rem;
 }
 
 @media only screen and (max-width: 767px) {
