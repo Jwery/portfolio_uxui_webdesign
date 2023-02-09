@@ -1,5 +1,5 @@
-body, html {
-  margin: 0;
+h2 {
+  margin-left: 3rem;
 }
 
 .container-all {
@@ -7,6 +7,8 @@ body, html {
   width: fit-content;
   margin: 20px auto;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -16,11 +18,17 @@ body, html {
   height: fit-content;
   margin: 3px;
   padding: 0;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  float: right;
+  float: left;
 }
 
+@media only screen and (max-width: 767px) {
+  .containe-all {
+    flex-direction: column;
+  }
+}
 img {
   width: 100%;
   transition-duration: 0.3s;
@@ -43,6 +51,12 @@ img {
   font-size: 1.6em;
   text-shadow: 1px 5px 10px black;
   transition-duration: 0.3s;
+  font-family: "Video", sans-serif;
+}
+@media (max-width: 40rem) {
+  .title {
+    display: none;
+  }
 }
 
 .text {

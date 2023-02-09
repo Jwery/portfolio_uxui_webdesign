@@ -1,12 +1,15 @@
 
-body, html{
-  margin: 0;
+
+h2{
+  margin-left: 3rem;
 }
 
 .container-all{
   width: fit-content;
   margin: 20px auto;
   height: auto;
+  display:flex;
+  flex-wrap: wrap;
 }
 .container{
   width: calc(33% - 6px);
@@ -14,9 +17,15 @@ body, html{
   height: fit-content;
   margin:3px;
   padding: 0;
-  display:block;
+  display:flex;
+  flex-wrap: wrap;
   position:relative;
-  float:right;
+  float:left;
+}
+@media only screen and (max-width: 767px) {
+  .containe-all {
+    flex-direction: column;
+  }
 }
 img{
   width: 100%;
@@ -39,6 +48,10 @@ img{
   font-size: 1.6em;
   text-shadow: 1px 5px 10px black;
   transition-duration: .3s;
+  font-family: 'Video', sans-serif;
+  @media (max-width:40rem) {
+   display:none; 
+  }
 }
 .text{
   position:absolute;
